@@ -2,8 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
 class AuthRepository {
-  Future<void> createUserAccount(
-      context, name, email, password, phoneNo) async {
+  Future<void> createUserAccount({required String name, required String email, required String password,}) async {
     try {
       UserCredential result =
           await FirebaseAuth.instance.createUserWithEmailAndPassword(
@@ -21,7 +20,7 @@ class AuthRepository {
     }
   }
 
-  Future<void> loginUser(email, password) async {
+  Future<void> signInUser({required String email,required String password}) async {
     try {
       var response = await FirebaseAuth.instance
           .signInWithEmailAndPassword(email: email, password: password);

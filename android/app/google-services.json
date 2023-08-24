@@ -1,42 +1,33 @@
 {
   "project_info": {
-    "project_number": "848311252023",
-    "firebase_url": "https://upload-b9927-default-rtdb.firebaseio.com",
-    "project_id": "upload-b9927",
-    "storage_bucket": "upload-b9927.appspot.com"
+    "project_number": "224412465368",
+    "project_id": "track-location-c3831",
+    "storage_bucket": "track-location-c3831.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:848311252023:android:83b3403111d7b48d117bb2",
+        "mobilesdk_app_id": "1:224412465368:android:beb2cbf5807f9ca5c6ffad",
         "android_client_info": {
           "package_name": "com.example.quiz_app"
         }
       },
       "oauth_client": [
         {
-          "client_id": "848311252023-c666arrvb0okbdif64bpmfjs4tbe9376.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.quiz_app",
-            "certificate_hash": "7466f445bfca3a82da5b27b54aec32f6ca517b48"
-          }
-        },
-        {
-          "client_id": "848311252023-5ooh109a4kc1dkj5cg14lenp0uv4usme.apps.googleusercontent.com",
+          "client_id": "224412465368-fqqruj64jvhl39d5g9u99fp8icn0aprh.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD54zY1PnyvxP8_AXhov72erN74bYiV-2M"
+          "current_key": "AIzaSyCRhGRKs-N-VLgMJZzZ8Ha7aRyAcstq1dU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "848311252023-5ooh109a4kc1dkj5cg14lenp0uv4usme.apps.googleusercontent.com",
+              "client_id": "224412465368-fqqruj64jvhl39d5g9u99fp8icn0aprh.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

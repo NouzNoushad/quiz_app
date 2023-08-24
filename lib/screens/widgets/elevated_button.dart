@@ -4,6 +4,7 @@ import 'package:quiz_app/utils/constants.dart';
 class CustomElevatedButton extends StatelessWidget {
   final String text;
   final Color buttonColor;
+  final Color? overlayColor;
   final Color textColor;
   final void Function()? onPressed;
   const CustomElevatedButton(
@@ -11,6 +12,7 @@ class CustomElevatedButton extends StatelessWidget {
       required this.text,
       required this.onPressed,
       required this.buttonColor,
+      this.overlayColor,
       required this.textColor});
 
   @override
@@ -20,9 +22,14 @@ class CustomElevatedButton extends StatelessWidget {
       width: contextSize(context).width * 0.8,
       child: ElevatedButton(
           onPressed: onPressed,
-          style: ElevatedButton.styleFrom(
-            backgroundColor: buttonColor,
-          ),
+          style: ButtonStyle(
+              overlayColor: MaterialStateProperty.resolveWith((states) {
+                if (states.contains(MaterialState.pressed)) {
+                  return overlayColor ?? buttonColor;
+                }
+                return buttonColor;
+              }),
+              backgroundColor: MaterialStateProperty.all(buttonColor)),
           child: Text(
             text,
             style: TextStyle(

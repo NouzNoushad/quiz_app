@@ -7,6 +7,7 @@ class CustomTextFormField extends StatelessWidget {
   final TextInputType? keyboardType;
   final TextEditingController? controller;
   final FocusNode? focusNode;
+  final bool? obscureText;
   final void Function(String?)? onSaved;
   final void Function(PointerDownEvent)? onTapOutside;
   final String? Function(String?)? validator;
@@ -15,6 +16,7 @@ class CustomTextFormField extends StatelessWidget {
     this.hintText,
     this.label,
     this.controller,
+    this.obscureText,
     this.focusNode,
     this.onTapOutside,
     this.onSaved,
@@ -34,6 +36,7 @@ class CustomTextFormField extends StatelessWidget {
         onTapOutside: onTapOutside,
         onSaved: onSaved,
         cursorColor: ColorPicker.colorScheme1,
+        obscureText: obscureText ?? false,
         style: const TextStyle(
             color: ColorPicker.colorScheme1, decorationThickness: 0),
         autovalidateMode: AutovalidateMode.onUserInteraction,
